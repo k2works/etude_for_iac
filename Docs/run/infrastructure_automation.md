@@ -107,6 +107,12 @@
 
 ### Resolve a failed chef-client run
 1. Assign an owner to the home page
-   
+
+1. Apply the changes to your node
+   ```bash
+   knife cookbook upload learn_chef_apache2 -o .
+   knife ssh 'hostname:chef-client' 'sudo chef-client' -x vagrant  -P vagrant
+   ```
+     
 ## 参照
 + [Configure a resource](https://learn.chef.io/modules/learn-the-basics/ubuntu/virtualbox/configure-a-resource#/)
