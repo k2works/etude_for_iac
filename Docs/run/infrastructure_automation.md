@@ -89,6 +89,8 @@
 ### Update your node's configuration
 1. Add template code to your HTML
 
+1. Update your cookbook's version metadata
+
    
 ## 参照
 + [Configure a resource](https://learn.chef.io/modules/learn-the-basics/ubuntu/virtualbox/configure-a-resource#/)
