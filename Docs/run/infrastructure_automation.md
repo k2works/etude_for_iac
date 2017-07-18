@@ -76,7 +76,7 @@
    knife bootstrap 192.168.33.102 -N chef-client -x vagrant -P vagrant --sudo --run-list 'recipe[learn_chef_apache2]'
    knife node list
    knife client show chef-client
-   knife node run_list add chef-client "recipe[apt]"
+   knife node run_list add chef-client "recipe[learn_chef_apache2]"
    knife node show chef-client
    knife ssh 'hostname:chef-client' 'sudo chef-client' -x vagrant  -P vagrant
    ```   
@@ -127,7 +127,19 @@
    cd /vagrant/learn_chef/infrastructure_automation/chef-reop/cookbooks/learn_chef_apache2$
    berks install
    SSL_CERT_FILE='~/.chef/trusted_certs/vagrant_vm.crt' berks upload
-   ```       
+   ```    
+   
+1. Create a role
+   ```bash
+   mkdir roles
+   touch roles/web.json
+   knife role from file roles/web.json
+   knife role list
+   knife role show web
+   knife node run_list set chef-client "role[web]"
+   knife node show chef-client --run-list 
+   ```      
+      
      
 ## 参照
 + [Configure a resource](https://learn.chef.io/modules/learn-the-basics/ubuntu/virtualbox/configure-a-resource#/)
