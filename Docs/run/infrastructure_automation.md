@@ -10,5 +10,7 @@ chef-client --local-mode hello.rb
 ```bash
 chef-client --local-mode hello.rb
 ```
+1.Ensure the MOTD file's contents are not changed by anyone else
+
 ## 参照
 + [Configure a resource](https://learn.chef.io/modules/learn-the-basics/ubuntu/virtualbox/configure-a-resource#/)
