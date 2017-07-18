@@ -48,5 +48,9 @@
    chef generate cookbook cookbooks/learn_chef_apache2
    ```
 
+1. Create a template
+   ```bash
+   chef generate template cookbooks/learn_chef_apache2 index.html
+   ```
 ## 参照
 + [Configure a resource](https://learn.chef.io/modules/learn-the-basics/ubuntu/virtualbox/configure-a-resource#/)
