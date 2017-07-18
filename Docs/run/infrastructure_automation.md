@@ -138,7 +138,13 @@
    knife role show web
    knife node run_list set chef-client "role[web]"
    knife node show chef-client --run-list 
-   ```      
+   ```     
+
+1. Run chef-clien
+   ```bash
+   knife ssh 'hostname:chef-client' 'sudo chef-client' -x vagrant  -P vagrant
+   knife status 'role:web' --run-list
+   ```    
       
      
 ## 参照
