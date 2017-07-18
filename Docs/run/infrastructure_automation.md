@@ -70,5 +70,13 @@
    knife cookbook list
    ```
    
+### Bootstrap your node
+1. Run the bootstrap command
+   ```bash
+   knife bootstrap 192.168.33.102 -N chef-client -x vagrant -P vagrant --sudo
+   knife node list
+   knife client show chef-client
+   ```   
+   
 ## 参照
 + [Configure a resource](https://learn.chef.io/modules/learn-the-basics/ubuntu/virtualbox/configure-a-resource#/)
