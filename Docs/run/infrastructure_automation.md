@@ -119,7 +119,15 @@
    knife cookbook upload learn_chef_apache2 -o .
    knife ssh 'hostname:chef-client' 'sudo chef-client' -x vagrant  -P vagrant
    curl 192.168.33.102
-   ```   
+   ```  
+   
+### Run chef-client periodically
+1. Get the chef-client cookbook
+   ```bash
+   cd /vagrant/learn_chef/infrastructure_automation/chef-reop/cookbooks/learn_chef_apache2$
+   berks install
+   SSL_CERT_FILE='~/.chef/trusted_certs/vagrant_vm.crt' berks upload
+   ```       
      
 ## 参照
 + [Configure a resource](https://learn.chef.io/modules/learn-the-basics/ubuntu/virtualbox/configure-a-resource#/)
