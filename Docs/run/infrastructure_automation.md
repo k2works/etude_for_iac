@@ -41,5 +41,12 @@
    curl localhost
    ```         
 
+## Make your recipe more manageable
+1. Create a cookbook
+   ```bash
+   mkdir cookbooks
+   chef generate cookbook cookbooks/learn_chef_apache2
+   ```
+
 ## 参照
 + [Configure a resource](https://learn.chef.io/modules/learn-the-basics/ubuntu/virtualbox/configure-a-resource#/)
