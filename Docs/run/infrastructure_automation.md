@@ -55,6 +55,11 @@
    
 1. Update the recipe to reference the HTML template
 
+1. Run the cookbook
+   ```bash
+   sudo chef-client --local-mode --runlist 'recipe[learn_chef_apache2]'
+   curl localhost
+   ```
    
 ## 参照
 + [Configure a resource](https://learn.chef.io/modules/learn-the-basics/ubuntu/virtualbox/configure-a-resource#/)
