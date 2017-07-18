@@ -52,5 +52,9 @@
    ```bash
    chef generate template cookbooks/learn_chef_apache2 index.html
    ```
+   
+1. Update the recipe to reference the HTML template
+
+   
 ## 参照
 + [Configure a resource](https://learn.chef.io/modules/learn-the-basics/ubuntu/virtualbox/configure-a-resource#/)
