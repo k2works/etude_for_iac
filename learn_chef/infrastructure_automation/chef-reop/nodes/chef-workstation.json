@@ -139,6 +139,9 @@
             }
           },
           "state": "up",
+          "arp": {
+            "192.168.33.1": "0a:00:27:00:00:03"
+          },
           "routes": [
             {
               "destination": "192.168.33.0/24",
@@ -216,16 +219,16 @@
           "lo": {
             "tx": {
               "queuelen": "1",
-              "bytes": "24434637",
-              "packets": "271014",
+              "bytes": "28600796",
+              "packets": "318737",
               "errors": "0",
               "drop": "0",
               "carrier": "0",
               "collisions": "0"
             },
             "rx": {
-              "bytes": "24434637",
-              "packets": "271014",
+              "bytes": "28600796",
+              "packets": "318737",
               "errors": "0",
               "drop": "0",
               "overrun": "0"
@@ -234,16 +237,16 @@
           "enp0s3": {
             "tx": {
               "queuelen": "1000",
-              "bytes": "207178",
-              "packets": "2105",
+              "bytes": "321679",
+              "packets": "3505",
               "errors": "0",
               "drop": "0",
               "carrier": "0",
               "collisions": "0"
             },
             "rx": {
-              "bytes": "3032731",
-              "packets": "3726",
+              "bytes": "7831191",
+              "packets": "7567",
               "errors": "0",
               "drop": "0",
               "overrun": "0"
@@ -252,16 +255,16 @@
           "enp0s8": {
             "tx": {
               "queuelen": "1000",
-              "bytes": "2592",
-              "packets": "24",
+              "bytes": "63662",
+              "packets": "132",
               "errors": "0",
               "drop": "0",
               "carrier": "0",
               "collisions": "0"
             },
             "rx": {
-              "bytes": "24205",
-              "packets": "134",
+              "bytes": "49456",
+              "packets": "314",
               "errors": "0",
               "drop": "0",
               "overrun": "0"
@@ -693,10 +696,10 @@
     "platform": "ubuntu",
     "platform_version": "16.04",
     "platform_family": "debian",
-    "uptime_seconds": 3791,
-    "uptime": "1 hours 03 minutes 11 seconds",
-    "idletime_seconds": 3582,
-    "idletime": "59 minutes 42 seconds",
+    "uptime_seconds": 4424,
+    "uptime": "1 hours 13 minutes 44 seconds",
+    "idletime_seconds": 4157,
+    "idletime": "1 hours 09 minutes 17 seconds",
     "etc": {
       "passwd": {
         "root": {
@@ -1326,12 +1329,151 @@
           "members": [
 
           ]
+        },
+        "ssl-cert": {
+          "gid": 118,
+          "members": [
+
+          ]
         }
       }
     },
-    "current_user": "vagrant",
+    "current_user": "root",
     "dmi": {
-      "dmidecode_version": "3.0"
+      "dmidecode_version": "3.0",
+      "smbios_version": "2.5",
+      "structures": {
+        "count": "10",
+        "size": "450"
+      },
+      "table_location": "0x000E1000",
+      "bios": {
+        "all_records": [
+          {
+            "record_id": "0x0000",
+            "size": "0",
+            "application_identifier": "BIOS Information",
+            "Vendor": "innotek GmbH",
+            "Version": "VirtualBox",
+            "Release Date": "12/01/2006",
+            "Address": "0xE0000",
+            "Runtime Size": "128 kB",
+            "ROM Size": "128 kB",
+            "Characteristics": {
+              "ISA is supported": null,
+              "PCI is supported": null,
+              "Boot from CD is supported": null,
+              "Selectable boot is supported": null,
+              "8042 keyboard services are supported (int 9h)": null,
+              "CGA/mono video services are supported (int 10h)": null,
+              "ACPI is supported": null
+            }
+          }
+        ],
+        "vendor": "innotek GmbH",
+        "version": "VirtualBox",
+        "release_date": "12/01/2006",
+        "address": "0xE0000",
+        "runtime_size": "128 kB",
+        "rom_size": "128 kB"
+      },
+      "system": {
+        "all_records": [
+          {
+            "record_id": "0x0001",
+            "size": "1",
+            "application_identifier": "System Information",
+            "Manufacturer": "innotek GmbH",
+            "Product Name": "VirtualBox",
+            "Version": "1.2",
+            "Serial Number": "0",
+            "UUID": "8F47F8AF-EBE0-412D-AD80-D78F8A3E1567",
+            "Wake-up Type": "Power Switch",
+            "SKU Number": "Not Specified",
+            "Family": "Virtual Machine"
+          }
+        ],
+        "manufacturer": "innotek GmbH",
+        "product_name": "VirtualBox",
+        "version": "1.2",
+        "serial_number": "0",
+        "uuid": "8F47F8AF-EBE0-412D-AD80-D78F8A3E1567",
+        "wake_up_type": "Power Switch",
+        "sku_number": "Not Specified",
+        "family": "Virtual Machine"
+      },
+      "base_board": {
+        "all_records": [
+          {
+            "record_id": "0x0008",
+            "size": "2",
+            "application_identifier": "Base Board Information",
+            "Manufacturer": "Oracle Corporation",
+            "Product Name": "VirtualBox",
+            "Version": "1.2",
+            "Serial Number": "0",
+            "Asset Tag": "Not Specified",
+            "Features": {
+              "Board is a hosting board": null
+            },
+            "Location In Chassis": "Not Specified",
+            "Chassis Handle": "0x0003",
+            "Type": "Motherboard",
+            "Contained Object Handles": "0"
+          }
+        ],
+        "manufacturer": "Oracle Corporation",
+        "product_name": "VirtualBox",
+        "version": "1.2",
+        "serial_number": "0",
+        "asset_tag": "Not Specified",
+        "location_in_chassis": "Not Specified",
+        "chassis_handle": "0x0003",
+        "type": "Motherboard",
+        "contained_object_handles": "0"
+      },
+      "chassis": {
+        "all_records": [
+          {
+            "record_id": "0x0003",
+            "size": "3",
+            "application_identifier": "Chassis Information",
+            "Manufacturer": "Oracle Corporation",
+            "Type": "Other",
+            "Lock": "Not Present",
+            "Version": "Not Specified",
+            "Serial Number": "Not Specified",
+            "Asset Tag": "Not Specified",
+            "Boot-up State": "Safe",
+            "Power Supply State": "Safe",
+            "Thermal State": "Safe",
+            "Security Status": "None"
+          }
+        ],
+        "manufacturer": "Oracle Corporation",
+        "type": "Other",
+        "lock": "Not Present",
+        "version": "Not Specified",
+        "serial_number": "Not Specified",
+        "asset_tag": "Not Specified",
+        "boot_up_state": "Safe",
+        "power_supply_state": "Safe",
+        "thermal_state": "Safe",
+        "security_status": "None"
+      },
+      "oem_strings": {
+        "all_records": [
+          {
+            "record_id": "0x0002",
+            "size": "11",
+            "application_identifier": "OEM Strings",
+            "String 1": "vboxVer_5.1.10",
+            "String 2": "vboxRev_112026"
+          }
+        ],
+        "string_1": "vboxVer_5.1.10",
+        "string_2": "vboxRev_112026"
+      }
     },
     "cpu": {
       "0": {
@@ -1405,9 +1547,9 @@
     },
     "memory": {
       "swap": {
-        "cached": "56kB",
+        "cached": "512kB",
         "total": "1048572kB",
-        "free": "1048516kB"
+        "free": "1041364kB"
       },
       "hugepages": {
         "total": "0",
@@ -1416,23 +1558,23 @@
         "surplus": "0"
       },
       "total": "2048312kB",
-      "free": "82980kB",
-      "buffers": "60396kB",
-      "cached": "543680kB",
-      "active": "1434676kB",
-      "inactive": "415152kB",
-      "dirty": "64kB",
+      "free": "184932kB",
+      "buffers": "29804kB",
+      "cached": "485332kB",
+      "active": "900352kB",
+      "inactive": "849936kB",
+      "dirty": "76kB",
       "writeback": "0kB",
-      "anon_pages": "1249384kB",
-      "mapped": "167976kB",
-      "slab": "65244kB",
-      "slab_reclaimable": "46668kB",
-      "slab_unreclaim": "18576kB",
-      "page_tables": "16328kB",
+      "anon_pages": "1238532kB",
+      "mapped": "137984kB",
+      "slab": "64660kB",
+      "slab_reclaimable": "45664kB",
+      "slab_unreclaim": "18996kB",
+      "page_tables": "16432kB",
       "nfs_unstable": "0kB",
       "bounce": "0kB",
       "commit_limit": "2072728kB",
-      "committed_as": "3229284kB",
+      "committed_as": "3222596kB",
       "vmalloc_total": "34359738367kB",
       "vmalloc_used": "0kB",
       "vmalloc_chunk": "0kB",
@@ -1484,13 +1626,13 @@
       },
       "/dev/mapper/vagrant--vg-root": {
         "kb_size": "39625324",
-        "kb_used": "5871144",
-        "kb_available": "31718264",
+        "kb_used": "5880624",
+        "kb_available": "31708784",
         "percent_used": "16%",
         "mount": "/",
         "total_inodes": "2526384",
-        "inodes_used": "230834",
-        "inodes_available": "2295550",
+        "inodes_used": "231679",
+        "inodes_available": "2294705",
         "inodes_percent_used": "10%",
         "fs_type": "ext4",
         "mount_options": [
@@ -1524,8 +1666,8 @@
       },
       "vagrant": {
         "kb_size": "975814656",
-        "kb_used": "733154420",
-        "kb_available": "242660236",
+        "kb_used": "734379024",
+        "kb_available": "241435632",
         "percent_used": "76%",
         "mount": "/vagrant",
         "total_inodes": "1000",
@@ -1810,12 +1952,12 @@
         },
         "/dev/mapper/vagrant--vg-root": {
           "kb_size": "39625324",
-          "kb_used": "5871144",
-          "kb_available": "31718264",
+          "kb_used": "5880624",
+          "kb_available": "31708784",
           "percent_used": "16%",
           "total_inodes": "2526384",
-          "inodes_used": "230834",
-          "inodes_available": "2295550",
+          "inodes_used": "231679",
+          "inodes_available": "2294705",
           "inodes_percent_used": "10%",
           "fs_type": "ext4",
           "mount_options": [
@@ -1854,8 +1996,8 @@
         },
         "vagrant": {
           "kb_size": "975814656",
-          "kb_used": "733154420",
-          "kb_available": "242660236",
+          "kb_used": "734379032",
+          "kb_available": "241435624",
           "percent_used": "76%",
           "total_inodes": "1000",
           "inodes_used": "0",
@@ -2098,12 +2240,12 @@
         },
         "/run": {
           "kb_size": "204832",
-          "kb_used": "3332",
-          "kb_available": "201500",
+          "kb_used": "3340",
+          "kb_available": "201492",
           "percent_used": "2%",
           "total_inodes": "256039",
-          "inodes_used": "612",
-          "inodes_available": "255427",
+          "inodes_used": "617",
+          "inodes_available": "255422",
           "inodes_percent_used": "1%",
           "fs_type": "tmpfs",
           "mount_options": [
@@ -2120,12 +2262,12 @@
         },
         "/": {
           "kb_size": "39625324",
-          "kb_used": "5871144",
-          "kb_available": "31718264",
+          "kb_used": "5880624",
+          "kb_available": "31708784",
           "percent_used": "16%",
           "total_inodes": "2526384",
-          "inodes_used": "230834",
-          "inodes_available": "2295550",
+          "inodes_used": "231679",
+          "inodes_available": "2294705",
           "inodes_percent_used": "10%",
           "fs_type": "ext4",
           "mount_options": [
@@ -2164,8 +2306,8 @@
           "kb_available": "5120",
           "percent_used": "0%",
           "total_inodes": "256039",
-          "inodes_used": "4",
-          "inodes_available": "256035",
+          "inodes_used": "5",
+          "inodes_available": "256034",
           "inodes_percent_used": "1%",
           "fs_type": "tmpfs",
           "mount_options": [
@@ -2250,8 +2392,8 @@
         },
         "/vagrant": {
           "kb_size": "975814656",
-          "kb_used": "733154420",
-          "kb_available": "242660236",
+          "kb_used": "734379032",
+          "kb_available": "241435624",
           "percent_used": "76%",
           "total_inodes": "1000",
           "inodes_used": "0",
@@ -2624,13 +2766,13 @@
         "tmpfs,/run": {
           "device": "tmpfs",
           "kb_size": "204832",
-          "kb_used": "3332",
-          "kb_available": "201500",
+          "kb_used": "3340",
+          "kb_available": "201492",
           "percent_used": "2%",
           "mount": "/run",
           "total_inodes": "256039",
-          "inodes_used": "612",
-          "inodes_available": "255427",
+          "inodes_used": "617",
+          "inodes_available": "255422",
           "inodes_percent_used": "1%",
           "fs_type": "tmpfs",
           "mount_options": [
@@ -2645,13 +2787,13 @@
         "/dev/mapper/vagrant--vg-root,/": {
           "device": "/dev/mapper/vagrant--vg-root",
           "kb_size": "39625324",
-          "kb_used": "5871144",
-          "kb_available": "31718264",
+          "kb_used": "5880624",
+          "kb_available": "31708784",
           "percent_used": "16%",
           "mount": "/",
           "total_inodes": "2526384",
-          "inodes_used": "230834",
-          "inodes_available": "2295550",
+          "inodes_used": "231679",
+          "inodes_available": "2294705",
           "inodes_percent_used": "10%",
           "fs_type": "ext4",
           "mount_options": [
@@ -2688,8 +2830,8 @@
           "percent_used": "0%",
           "mount": "/run/lock",
           "total_inodes": "256039",
-          "inodes_used": "4",
-          "inodes_available": "256035",
+          "inodes_used": "5",
+          "inodes_available": "256034",
           "inodes_percent_used": "1%",
           "fs_type": "tmpfs",
           "mount_options": [
@@ -2769,8 +2911,8 @@
         "vagrant,/vagrant": {
           "device": "vagrant",
           "kb_size": "975814656",
-          "kb_used": "733154420",
-          "kb_available": "242660236",
+          "kb_used": "734379032",
+          "kb_available": "241435624",
           "percent_used": "76%",
           "mount": "/vagrant",
           "total_inodes": "1000",
@@ -3117,6 +3259,7 @@
     "fqdn": "chef-workstation",
     "domain": null,
     "machine_id": "48b4eb69e96122597ef991d558d0408c",
+    "shard_seed": 173037325,
     "fips": {
       "kernel": {
         "enabled": false
@@ -3204,7 +3347,7 @@
       "ULONG_MAX": 18446744073709551615,
       "USHRT_MAX": 65535,
       "WORD_BIT": 32,
-      "_AVPHYS_PAGES": 19174,
+      "_AVPHYS_PAGES": 44665,
       "_NPROCESSORS_CONF": 1,
       "_NPROCESSORS_ONLN": 1,
       "_PHYS_PAGES": 512078,
@@ -3707,7 +3850,17 @@
     "time": {
       "timezone": "UTC"
     },
-    "ohai_time": 1500352378.35796,
+    "virtualbox": {
+      "host": {
+        "revision": "112026",
+        "version": "5.1.10"
+      },
+      "guest": {
+        "guest_additions_version": "5.1.10",
+        "guest_additions_revision": "112026"
+      }
+    },
+    "ohai_time": 1500353010.795626,
     "init_package": "systemd",
     "packages": {
       "accountsservice": {
@@ -3725,6 +3878,22 @@
       "adduser": {
         "version": "3.113+nmu3ubuntu4",
         "arch": "all"
+      },
+      "apache2": {
+        "version": "2.4.18-2ubuntu3.3",
+        "arch": "amd64"
+      },
+      "apache2-bin": {
+        "version": "2.4.18-2ubuntu3.3",
+        "arch": "amd64"
+      },
+      "apache2-data": {
+        "version": "2.4.18-2ubuntu3.3",
+        "arch": "all"
+      },
+      "apache2-utils": {
+        "version": "2.4.18-2ubuntu3.3",
+        "arch": "amd64"
       },
       "apparmor": {
         "version": "2.10.95-0ubuntu2.5",
@@ -4362,6 +4531,22 @@
         "version": "2.10.95-0ubuntu2.5",
         "arch": "amd64"
       },
+      "libapr1": {
+        "version": "1.5.2-3",
+        "arch": "amd64"
+      },
+      "libaprutil1": {
+        "version": "1.5.4-1build1",
+        "arch": "amd64"
+      },
+      "libaprutil1-dbd-sqlite3": {
+        "version": "1.5.4-1build1",
+        "arch": "amd64"
+      },
+      "libaprutil1-ldap": {
+        "version": "1.5.4-1build1",
+        "arch": "amd64"
+      },
       "libapt-inst2.0": {
         "version": "1.2.19",
         "arch": "amd64"
@@ -4796,6 +4981,10 @@
       },
       "libltdl7": {
         "version": "2.4.6-0.1",
+        "arch": "amd64"
+      },
+      "liblua5.1-0": {
+        "version": "5.1.5-8ubuntu1",
         "arch": "amd64"
       },
       "liblvm2app2.2": {
@@ -5764,6 +5953,10 @@
       },
       "ssh-import-id": {
         "version": "5.5-0ubuntu1",
+        "arch": "all"
+      },
+      "ssl-cert": {
+        "version": "1.0.37",
         "arch": "all"
       },
       "strace": {

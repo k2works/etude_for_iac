@@ -21,6 +21,17 @@
 ## Configure a package and service
 1. Ensure the apt cache is up to date   
    
+1. Install the Apache package
+   ```bash
+   sudo chef-client --local-mode webserver.rb
+   ```   
+
+1. Start and enable the Apache service
+   ```bash
+   sudo chef-client --local-mode webserver.rb
+   ```      
+
+
 
 ## 参照
 + [Configure a resource](https://learn.chef.io/modules/learn-the-basics/ubuntu/virtualbox/configure-a-resource#/)
