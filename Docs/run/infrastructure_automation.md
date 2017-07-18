@@ -145,7 +145,14 @@
    knife ssh 'hostname:chef-client' 'sudo chef-client' -x vagrant  -P vagrant
    knife status 'role:web' --run-list
    ```    
-      
+
+1. Next steps
+   ```bash
+   berks install
+   SSL_CERT_FILE='~/.chef/trusted_certs/vagrant_vm.crt' berks upload
+   cd ..
+   knife cookbook upload learn_chef_apache2 -o .
+   ```      
      
 ## 参照
 + [Configure a resource](https://learn.chef.io/modules/learn-the-basics/ubuntu/virtualbox/configure-a-resource#/)
