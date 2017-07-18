@@ -1,6 +1,6 @@
 # Infrastructure Automation
-
-## Configure a resource
+## Learn the Chef basics
+### Configure a resource
 1. Set up your working directory
 
 1. Create the MOTD file
@@ -18,7 +18,7 @@
    chef-client --local-mode goodbye.rb
    ```
    
-## Configure a package and service
+### Configure a package and service
 1. Ensure the apt cache is up to date   
    
 1. Install the Apache package
@@ -41,7 +41,7 @@
    curl localhost
    ```         
 
-## Make your recipe more manageable
+### Make your recipe more manageable
 1. Create a cookbook
    ```bash
    mkdir cookbooks
@@ -59,6 +59,15 @@
    ```bash
    sudo chef-client --local-mode --runlist 'recipe[learn_chef_apache2]'
    curl localhost
+   ```
+
+## Manage a node with Chef server
+### Upload a cookbook to Chef server
+1. Upload your cookbook to the Chef server
+   ```bash
+   cd /vagrant/learn_chef/infrastructure_automation/chef-reop/cookbooks/   
+   knife cookbook upload learn_chef_apache2 -o .
+   knife cookbook list
    ```
    
 ## 参照

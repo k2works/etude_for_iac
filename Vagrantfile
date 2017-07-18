@@ -43,6 +43,10 @@ Vagrant.configure("2") do |config|
     host.vm.network :forwarded_port, id: "ssh", guest: 22, host: 2222
     host.vm.network "private_network", ip: "192.168.33.10"
     host.vm.provision :shell, :inline => $server_script
+    host.vm.provider 'virtualbox' do |v|
+      v.memory = 4096
+      v.cpus = 2
+    end
   end
 
   config.vm.define "workstation" do |host|
