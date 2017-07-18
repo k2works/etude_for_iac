@@ -73,7 +73,7 @@
 ### Bootstrap your node
 1. Run the bootstrap command
    ```bash
-   knife bootstrap 192.168.33.102 -N chef-client -x vagrant -P vagrant --sudo
+   knife bootstrap 192.168.33.102 -N chef-client -x vagrant -P vagrant --sudo --run-list 'recipe[learn_chef_apache2]'
    knife node list
    knife client show chef-client
    knife node run_list add chef-client "recipe[apt]"
