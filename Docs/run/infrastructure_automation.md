@@ -91,6 +91,15 @@
 
 1. Update your cookbook's version metadata
 
+1. Upload your cookbook to the Chef server
+   ```bash
+   knife cookbook upload learn_chef_apache2 -o .
+   ```
+   
+1. Run the cookbook on your node
+   ```bash
+   knife ssh 'hostname:chef-client' 'sudo chef-client' -x vagrant  -P vagrant
+   ```   
    
 ## 参照
 + [Configure a resource](https://learn.chef.io/modules/learn-the-basics/ubuntu/virtualbox/configure-a-resource#/)
