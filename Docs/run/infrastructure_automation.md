@@ -31,7 +31,15 @@
    sudo chef-client --local-mode webserver.rb
    ```      
 
-
+1. Add a home page
+   ```bash
+   sudo chef-client --local-mode webserver.rb
+   ```
+   
+1. Confirm your web site is running
+   ```bash
+   curl localhost
+   ```         
 
 ## 参照
 + [Configure a resource](https://learn.chef.io/modules/learn-the-basics/ubuntu/virtualbox/configure-a-resource#/)

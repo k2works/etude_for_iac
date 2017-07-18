@@ -219,16 +219,16 @@
           "lo": {
             "tx": {
               "queuelen": "1",
-              "bytes": "28600796",
-              "packets": "318737",
+              "bytes": "29803503",
+              "packets": "332774",
               "errors": "0",
               "drop": "0",
               "carrier": "0",
               "collisions": "0"
             },
             "rx": {
-              "bytes": "28600796",
-              "packets": "318737",
+              "bytes": "29803503",
+              "packets": "332774",
               "errors": "0",
               "drop": "0",
               "overrun": "0"
@@ -237,16 +237,16 @@
           "enp0s3": {
             "tx": {
               "queuelen": "1000",
-              "bytes": "321679",
-              "packets": "3505",
+              "bytes": "333345",
+              "packets": "3592",
               "errors": "0",
               "drop": "0",
               "carrier": "0",
               "collisions": "0"
             },
             "rx": {
-              "bytes": "7831191",
-              "packets": "7567",
+              "bytes": "7836959",
+              "packets": "7657",
               "errors": "0",
               "drop": "0",
               "overrun": "0"
@@ -255,16 +255,16 @@
           "enp0s8": {
             "tx": {
               "queuelen": "1000",
-              "bytes": "63662",
-              "packets": "132",
+              "bytes": "75588",
+              "packets": "170",
               "errors": "0",
               "drop": "0",
               "carrier": "0",
               "collisions": "0"
             },
             "rx": {
-              "bytes": "49456",
-              "packets": "314",
+              "bytes": "59224",
+              "packets": "380",
               "errors": "0",
               "drop": "0",
               "overrun": "0"
@@ -696,10 +696,10 @@
     "platform": "ubuntu",
     "platform_version": "16.04",
     "platform_family": "debian",
-    "uptime_seconds": 4424,
-    "uptime": "1 hours 13 minutes 44 seconds",
-    "idletime_seconds": 4157,
-    "idletime": "1 hours 09 minutes 17 seconds",
+    "uptime_seconds": 4592,
+    "uptime": "1 hours 16 minutes 32 seconds",
+    "idletime_seconds": 4318,
+    "idletime": "1 hours 11 minutes 58 seconds",
     "etc": {
       "passwd": {
         "root": {
@@ -1547,9 +1547,9 @@
     },
     "memory": {
       "swap": {
-        "cached": "512kB",
+        "cached": "532kB",
         "total": "1048572kB",
-        "free": "1041364kB"
+        "free": "1041392kB"
       },
       "hugepages": {
         "total": "0",
@@ -1558,23 +1558,23 @@
         "surplus": "0"
       },
       "total": "2048312kB",
-      "free": "184932kB",
-      "buffers": "29804kB",
-      "cached": "485332kB",
-      "active": "900352kB",
-      "inactive": "849936kB",
+      "free": "185176kB",
+      "buffers": "29940kB",
+      "cached": "486088kB",
+      "active": "901420kB",
+      "inactive": "848604kB",
       "dirty": "76kB",
       "writeback": "0kB",
-      "anon_pages": "1238532kB",
-      "mapped": "137984kB",
-      "slab": "64660kB",
-      "slab_reclaimable": "45664kB",
-      "slab_unreclaim": "18996kB",
+      "anon_pages": "1237364kB",
+      "mapped": "138112kB",
+      "slab": "64700kB",
+      "slab_reclaimable": "45680kB",
+      "slab_unreclaim": "19020kB",
       "page_tables": "16432kB",
       "nfs_unstable": "0kB",
       "bounce": "0kB",
       "commit_limit": "2072728kB",
-      "committed_as": "3222596kB",
+      "committed_as": "3230828kB",
       "vmalloc_total": "34359738367kB",
       "vmalloc_used": "0kB",
       "vmalloc_chunk": "0kB",
@@ -1666,8 +1666,8 @@
       },
       "vagrant": {
         "kb_size": "975814656",
-        "kb_used": "734379024",
-        "kb_available": "241435632",
+        "kb_used": "734380836",
+        "kb_available": "241433820",
         "percent_used": "76%",
         "mount": "/vagrant",
         "total_inodes": "1000",
@@ -1996,8 +1996,8 @@
         },
         "vagrant": {
           "kb_size": "975814656",
-          "kb_used": "734379032",
-          "kb_available": "241435624",
+          "kb_used": "734381188",
+          "kb_available": "241433468",
           "percent_used": "76%",
           "total_inodes": "1000",
           "inodes_used": "0",
@@ -2392,8 +2392,8 @@
         },
         "/vagrant": {
           "kb_size": "975814656",
-          "kb_used": "734379032",
-          "kb_available": "241435624",
+          "kb_used": "734381188",
+          "kb_available": "241433468",
           "percent_used": "76%",
           "total_inodes": "1000",
           "inodes_used": "0",
@@ -2911,8 +2911,8 @@
         "vagrant,/vagrant": {
           "device": "vagrant",
           "kb_size": "975814656",
-          "kb_used": "734379032",
-          "kb_available": "241435624",
+          "kb_used": "734381188",
+          "kb_available": "241433468",
           "percent_used": "76%",
           "mount": "/vagrant",
           "total_inodes": "1000",
@@ -3347,7 +3347,7 @@
       "ULONG_MAX": 18446744073709551615,
       "USHRT_MAX": 65535,
       "WORD_BIT": 32,
-      "_AVPHYS_PAGES": 44665,
+      "_AVPHYS_PAGES": 44808,
       "_NPROCESSORS_CONF": 1,
       "_NPROCESSORS_ONLN": 1,
       "_PHYS_PAGES": 512078,
@@ -3860,7 +3860,7 @@
         "guest_additions_revision": "112026"
       }
     },
-    "ohai_time": 1500353010.795626,
+    "ohai_time": 1500353178.9000175,
     "init_package": "systemd",
     "packages": {
       "accountsservice": {
