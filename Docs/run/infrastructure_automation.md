@@ -76,7 +76,15 @@
    knife bootstrap 192.168.33.102 -N chef-client -x vagrant -P vagrant --sudo
    knife node list
    knife client show chef-client
+   knife node run_list add chef-client "recipe[apt]"
+   knife node show chef-client
+   knife ssh 'hostname:chef-client' 'sudo chef-client' -x vagrant  -P vagrant
    ```   
+   
+1. Confirm the result      
+   ````bash
+   curl 192.168.33.102
+   ````   
    
 ## 参照
 + [Configure a resource](https://learn.chef.io/modules/learn-the-basics/ubuntu/virtualbox/configure-a-resource#/)
