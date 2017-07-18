@@ -152,7 +152,23 @@
    SSL_CERT_FILE='~/.chef/trusted_certs/vagrant_vm.crt' berks upload
    cd ..
    knife cookbook upload learn_chef_apache2 -o .
-   ```      
+   ```    
+   
+1. Delete the node from the Chef server
+   ```bash
+   knife node delete chef-client --yes
+   knife client delete chef-client --yes
+   ```     
+
+1. Delete your cookbook from the Chef serve
+   ```bash
+   knife cookbook delete learn_chef_apache2 --all --yes
+   ```   
      
+1. Delete the role from the Chef server
+   ```bash
+   knife role delete web --yes
+   ```     
+   
 ## 参照
 + [Configure a resource](https://learn.chef.io/modules/learn-the-basics/ubuntu/virtualbox/configure-a-resource#/)
