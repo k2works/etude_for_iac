@@ -183,6 +183,13 @@
    ```
    
 1. Create the Test Kitchen configuration file   
+
+1. Create the Test Kitchen instance
+   ```bash
+   kitchen list
+   kitchen create
+   kitchen list
+   ```
    
 ## 参照
 + [Configure a resource](https://learn.chef.io/modules/learn-the-basics/ubuntu/virtualbox/configure-a-resource#/)
