@@ -173,6 +173,14 @@
 ## Get started with Test Kitchen
 ### Get started with Test Kitchen with Ubuntu on Amazon Web Services
 1. [Get started with Test Kitchen with Ubuntu on Amazon Web Services](../build/build_aws_workstation.md) 
+
+### Apply a cookbook locally
+1. Get the learn_chef_apache2 cookbook from GitHub
+   ```bash
+   cd /vagrant/learn_chef/infrastructure_automation/chef-reop/cookbooks
+   git clone https://github.com/learn-chef/learn_chef_apache2.git learn_chef_apache2_aws
+   cd learn_chef_apache2_aws
+   ```
    
 ## 参照
 + [Configure a resource](https://learn.chef.io/modules/learn-the-basics/ubuntu/virtualbox/configure-a-resource#/)
