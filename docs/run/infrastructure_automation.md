@@ -228,6 +228,21 @@
       
 ### Appendix: Collaborative development
 1. Use dynamic configuration    
+   `.ent`
+   ```text
+   export AWS_ACCESS_KEY_ID=xxxxxx
+   export AWS_SECRET_ACCESS_KEY=xxxxxx
+   export AWS_DEFAULT_REGION=xxxxxx
+   export AWS_AZ=x
+   export VPCID=xxxxxx
+   export SGID=xxxxxx
+   export AWS_SSH_KEY_ID=xxxxxx
+   export AWS_SUBNET_ID=xxxxxx
+   export AWS_AMI_ID=xxxxxx
+   export AWS_SECURITY_GROUP_IDS=['xxxxxx','xxxxxx']
+   export AWS_SSH_KEY_PATH=xxxxxx
+   ```
+  
    
 ## 参照
 + [Configure a resource](https://learn.chef.io/modules/learn-the-basics/ubuntu/virtualbox/configure-a-resource#/)

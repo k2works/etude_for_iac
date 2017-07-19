@@ -1,13 +1,12 @@
 ---
 driver:
-  aws_ssh_key_id: etude_for_iac
-  region: us-east-1
-  availability_zone: a
-  subnet_id: subnet-7ce26826
+  aws_ssh_key_id: <%= ENV['AWS_SSH_KEY_ID'] %>
+  region: <%= ENV['AWS_DEFAULT_REGION'] %>
+  availability_zone: <%= ENV['AWS_AZ'] %>
+  subnet_id: <%= ENV['AWS_SUBNET_ID'] %>
   instance_type: t2.micro
-  image_id: ami-d15a75c7
-  security_group_ids: ['sg-8c3266fd']
+  image_id: <%= ENV['AWS_AMI_ID'] %>
+  security_group_ids: <%= ENV['AWS_SECURITY_GROUP_IDS'] %>
 
 transport:
-  #ssh_key: /home/vagrant/.ssh/etude_for_iac.pem
-  ssh_key: ../../../../../etude_for_iac.pem
+  ssh_key: <%= ENV['AWS_SSH_KEY_PATH'] %>
