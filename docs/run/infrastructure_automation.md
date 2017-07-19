@@ -198,6 +198,11 @@
    kitchen list
    kitchen converge
    ```   
+
+1. Verify that your Test Kitchen instance is configured as expected
+   ```bash
+   kitchen exec -c 'wget -qO- localhost'
+   ```   
    
 ## 参照
 + [Configure a resource](https://learn.chef.io/modules/learn-the-basics/ubuntu/virtualbox/configure-a-resource#/)
