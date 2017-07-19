@@ -1,6 +1,19 @@
 ---
 driver:
-  name: vagrant
+  #name: vagrant
+  name: ec2
+  aws_ssh_key_id: etude_for_iac
+  region: us-east-1
+  availability_zone: a
+  subnet_id: subnet-7ce26826
+  instance_type: t2.micro
+  image_id: ami-d15a75c7
+  security_group_ids: sg-8c3266fd
+  retryable_tries: 120
+  associate_public_ip: true
+
+driver_config:
+  require_chef_omnibus: 12.19.36
 
 provisioner:
   name: chef_zero
@@ -11,6 +24,9 @@ provisioner:
 
 verifier:
   name: inspec
+
+transport:
+  ssh_key: /home/vagrant/.ssh/etude_for_iac.pem
 
 platforms:
   - name: ubuntu-14.04

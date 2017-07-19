@@ -182,5 +182,7 @@
    cd learn_chef_apache2_aws
    ```
    
+1. Create the Test Kitchen configuration file   
+   
 ## 参照
 + [Configure a resource](https://learn.chef.io/modules/learn-the-basics/ubuntu/virtualbox/configure-a-resource#/)
