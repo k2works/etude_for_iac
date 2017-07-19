@@ -204,5 +204,11 @@
    kitchen exec -c 'wget -qO- localhost'
    ```   
    
+1. Delete the Test Kitchen instance
+   ```bash
+   kitchen destroy
+   kitchen list
+   ```   
+   
 ## 参照
 + [Configure a resource](https://learn.chef.io/modules/learn-the-basics/ubuntu/virtualbox/configure-a-resource#/)
