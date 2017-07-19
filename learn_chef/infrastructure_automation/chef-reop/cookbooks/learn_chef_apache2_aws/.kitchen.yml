@@ -26,10 +26,12 @@ verifier:
   name: inspec
 
 transport:
-  ssh_key: /home/vagrant/.ssh/etude_for_iac.pem
+  #ssh_key: /home/vagrant/.ssh/etude_for_iac.pem
+  ssh_key: ../../../../../etude_for_iac.pem
+
 
 platforms:
-  - name: ubuntu-14.04
+  - name: ubuntu-16.04
 
 suites:
   - name: default
