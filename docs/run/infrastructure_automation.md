@@ -218,7 +218,13 @@
    kitchen converge
    echo $?
    ```
-    
+   
+1. Resolve the failure
+   ```bash
+   kitchen converge
+   kitchen exec -c 'wget -qO- localhost'
+   kitchen exec -c 'stat /var/www/html/index.html'
+   ```
    
 ## 参照
 + [Configure a resource](https://learn.chef.io/modules/learn-the-basics/ubuntu/virtualbox/configure-a-resource#/)
