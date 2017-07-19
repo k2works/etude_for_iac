@@ -191,5 +191,13 @@
    kitchen list
    ```
    
+1. Apply the learn_chef_apache2 cookbook to your Test Kitchen instance
+   ```bash
+   kitchen converge
+   echo $?
+   kitchen list
+   kitchen converge
+   ```   
+   
 ## 参照
 + [Configure a resource](https://learn.chef.io/modules/learn-the-basics/ubuntu/virtualbox/configure-a-resource#/)
