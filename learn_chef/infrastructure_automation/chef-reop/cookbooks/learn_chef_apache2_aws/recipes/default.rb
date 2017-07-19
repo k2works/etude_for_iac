@@ -11,10 +11,13 @@ end
 package 'apache2'
 
 service 'apache2' do
-  supports status: true
+  supports :status => true
   action [:enable, :start]
 end
 
-template '/var/www/html/index.html' do # ~FC033
+template '/var/www/html/index.html' do
   source 'index.html.erb'
+  mode '0644'
+  owner 'web_admin'
+  group 'web_admin'
 end

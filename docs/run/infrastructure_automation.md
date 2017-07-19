@@ -210,5 +210,15 @@
    kitchen list
    ```   
    
+### Resolve a failure
+1. Assign an owner to the home page
+
+1. Apply the changes to your test instance
+   ```bash
+   kitchen converge
+   echo $?
+   ```
+    
+   
 ## 参照
 + [Configure a resource](https://learn.chef.io/modules/learn-the-basics/ubuntu/virtualbox/configure-a-resource#/)
