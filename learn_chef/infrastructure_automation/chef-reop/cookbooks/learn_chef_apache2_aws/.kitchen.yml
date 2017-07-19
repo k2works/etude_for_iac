@@ -1,14 +1,7 @@
 ---
 driver:
-  #name: vagrant
   name: ec2
-  aws_ssh_key_id: etude_for_iac
-  region: us-east-1
-  availability_zone: a
-  subnet_id: subnet-7ce26826
-  instance_type: t2.micro
-  image_id: ami-d15a75c7
-  security_group_ids: sg-8c3266fd
+  instance_type: m1.small
   retryable_tries: 120
   associate_public_ip: true
 
@@ -24,11 +17,6 @@ provisioner:
 
 verifier:
   name: inspec
-
-transport:
-  #ssh_key: /home/vagrant/.ssh/etude_for_iac.pem
-  ssh_key: ../../../../../etude_for_iac.pem
-
 
 platforms:
   - name: ubuntu-16.04

@@ -225,6 +225,9 @@
    kitchen exec -c 'wget -qO- localhost'
    kitchen exec -c 'stat /var/www/html/index.html'
    ```
+      
+### Appendix: Collaborative development
+1. Use dynamic configuration    
    
 ## 参照
 + [Configure a resource](https://learn.chef.io/modules/learn-the-basics/ubuntu/virtualbox/configure-a-resource#/)
