@@ -1,0 +1,109 @@
+DEV:
+  REGION: 'us-east-1'
+  VPC:
+    VPC_TAGS:
+      NAME:
+        KEY: 'Name'
+        VALUE: 'EtudeForIaC'
+      GROUP:
+        KEY: 'GroupName'
+        VALUE: 'EtudeVpcGroup'
+    VPC_CIDR_BLOCK: '10.0.0.0/16'
+    SUBNETS:
+      PUBLIC:
+        - CONFIG:
+            SUBNET_TAGS:
+              - NAME:
+                  KEY: 'Name'
+                  VALUE: 'EtudeForIaCVpcPublicSubnet1'
+            SUBNET_CIDR_BLOCK:
+              - '10.0.0.0/24'
+            AZ:
+              - 'us-east-1a'
+      PRIVATE:
+        - CONFIG:
+            SUBNET_TAGS:
+              - NAME:
+                  KEY: 'Name'
+                  VALUE: 'EtudeForIaCVpcPrivateSubnet1'
+            SUBNET_CIDR_BLOCK:
+              - '10.0.1.0/24'
+            AZ:
+              - 'us-east-1b'
+    ROUTE_TABLES:
+      PUBLIC:
+        - CONFIG:
+            ROUTE_TABLE_TAGS:
+              - NAME:
+                  KEY: 'Name'
+                  VALUE: 'EtudeForIaCVpcPublicRouteTable1'
+            DESTINATION_CIDR_BLOCK:
+              - '0.0.0.0/0'
+      PRIVATE:
+        - CONFIG:
+            ROUTE_TABLE_TAGS:
+              - NAME:
+                  KEY: 'Name'
+                  VALUE: 'EtudeForIaCVpcPrivateSubnet1'
+            DESTINATION_CIDR_BLOCK:
+              - '10.0.0.0/16'
+    INTERNET_GATEWAY:
+      IG_TAGS:
+        NAME:
+          KEY: 'Name'
+          VALUE: 'EtudeForIaCVpcInternetGateway'
+    VPN:
+      CUSTOMER_GATEWAYS:
+        - CONFIG:
+            CUSTOMER_GATEWAY:
+              BGP_ASN: '65534'
+              PUBLIC_IP: '110.4.157.54'
+              TYPE: 'ipsec.1'
+              TAGS:
+                NAME:
+                  KEY: 'Name'
+                  VALUE: 'EtudeForIaCCustomerGateway'
+      VPN_GATEWAY:
+        TYPE: 'ipsec.1'
+        DESTINATION_CIDR_BLOCKS:
+          - CIDR: '192.168.0.0/16'
+        TAGS:
+          NAME:
+            KEY: 'Name'
+            VALUE: 'EtudeForIaCVpnGateway'
+      VPN_CONNECTIONS:
+        - CONFIG:
+            VPN_CONNECTION:
+              TYPE: 'ipsec.1'
+              OPTIONS:
+                STATIC_ROUTES_ONLY: true
+              TAGS:
+                NAME:
+                  KEY: 'Name'
+                  VALUE: 'EtudeForIaCVpnConnection'
+  EC2:
+      INSTANCE_TAGS:
+        NAME_VALUE: 'etude-for-iac-WebApp'
+        GROUP_VALUE: 'etude-for-iac-WebApp'
+      SECURITY_GROUP_NAME: 'etude-for-iac-WebAppSG'
+      SECURITY_GROUP_DESCRIPTION: 'Enable HTTP access via port 80 and SSH access via port 22.'
+      KEY_PAIR_NAME: 'etude_for_iac'
+      KEY_PAIR_PATH: '/'
+      IMAGE_ID: 'ami-c58c1dd3'
+      INSTANCE_TYPE: 't2.micro'
+      EIP: '34.224.220.103'
+      MIN_COUNT: '1'
+      MAX_COUNT: '1'
+      INSTANCES:
+        PUBLIC:
+          - CONFIG:
+              INSTANCE_TAGS:
+                - NAME:
+                    KEY: 'Name'
+                    VALUE: 'etude-for-iac-WebApp'
+        PRIVATE:
+          - CONFIG:
+              INSTANCE_TAGS:
+                - NAME:
+                    KEY: 'Name'
+                    VALUE: 'etude-for-iac-WebApp'
